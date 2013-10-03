@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="618.0" 
+
+xmlns:fx="http://javafx.com/fxml"
+ fx:controller="vista.controlador.ControladorAccesoAlumno" >
+  <children>
+    <Pane layoutX="14.0" layoutY="24.0" prefHeight="377.0" prefWidth="590.0">
+      <children>
+        <Label layoutX="13.0" layoutY="30.0" prefHeight="16.9609375" prefWidth="48.0" text="Nombre:" />
+        <TextField fx:id="txtnombre" layoutX="73.0" layoutY="25.0" prefWidth="200.0" />
+        <TextField fx:id="txtApaterno" layoutX="73.0" layoutY="53.0" prefWidth="200.0" />
+        <Label layoutX="13.0" layoutY="62.0" text="A.Paterno:" />
+        <Label layoutX="286.0" layoutY="59.0" text="A.Materno:" />
+        <TextField fx:id="txtmaterno" layoutX="354.0" layoutY="53.0" prefWidth="200.0" />
+        <Label layoutX="14.0" layoutY="94.0" text="Fecha de Nacimiento:" />
+        <TextField fx:id="txtfechanac" layoutX="138.0" layoutY="88.0" prefWidth="200.0" />
+        <Label layoutX="14.0" layoutY="127.0" text="sexo:" />
+        <ComboBox fx:id="cbosexo" layoutX="56.0" layoutY="122.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Femenino" />
+              <String fx:value="Masculino" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        
+        <Label layoutX="14.0" layoutY="157.0" text="Carrera" />
+        <ComboBox fx:id="cboCarrera" layoutX="72.0" layoutY="155.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TableView fx:id="jtable" layoutX="29.0" layoutY="189.0" prefHeight="172.0" prefWidth="525.0" />
+        <Button fx:id="btnguardar" layoutX="217.0" layoutY="155.0" mnemonicParsing="false" onAction="#guardar" text="guardar" />
+        <Button fx:id="btneliminar" layoutX="298.0" layoutY="158.0" mnemonicParsing="false" onAction="#eliminar" text="eliminar" />
+        <Button fx:id="btnModificar" layoutX="380.0" layoutY="158.0" mnemonicParsing="false" onAction="#modificar" text="modificar" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

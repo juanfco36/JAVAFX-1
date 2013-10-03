@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="532.0" xmlns:fx="http://javafx.com/fxml"
+
+ fx:controller="vista.controlador.ControladorAcceso">
+  <children>
+    <Pane layoutX="20.0" layoutY="14.0" prefHeight="431.0" prefWidth="498.0">
+      <children>
+        <ToolBar layoutX="14.0" layoutY="14.0" prefWidth="470.0">
+          <items>
+            <Button fx:id="btnguardar" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+            <Button fx:id="btneliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+            <Button fx:id="btnmodificar" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
+            <Button fx:id="btnsalir" mnemonicParsing="false" onAction="#salir" text="Salir" />
+          </items>
+        </ToolBar>
+        <Label layoutX="64.0" layoutY="62.0" text="Nombre:" />
+        <TextField fx:id="txtnombre" layoutX="123.0" layoutY="53.0" prefWidth="200.0" />
+        <Label layoutX="77.0" layoutY="88.0" text="Siglas:" />
+        <TextField fx:id="txtsiglas" layoutX="123.0" layoutY="82.0" prefWidth="200.0" />
+        <TextField fx:id="txtJefeCarrera" layoutX="123.0" layoutY="110.0" prefWidth="200.0" />
+        <Label layoutX="29.0" layoutY="116.0" text="Jefe de Carrera:" />
+        <Label layoutX="59.0" layoutY="147.0" text="Matricula:" />
+        <TextField fx:id="txtMatricula" layoutX="123.0" layoutY="138.0" prefWidth="82.0" />
+        <Label layoutX="50.0" layoutY="171.0" text="Acreditado:" />
+        <ComboBox fx:id="cboAcreditado" layoutX="123.0" layoutY="166.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="SI" />
+              <String fx:value="NO" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TableView fx:id="jtable" layoutX="28.0" layoutY="207.0" prefHeight="200.0" prefWidth="442.0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
