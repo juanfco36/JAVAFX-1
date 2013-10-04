@@ -12,7 +12,7 @@ public class Alumno {
 	private String sexo;
 	private Carrera Ocarrera;
 	private Conexion cn;
-	
+	/*
 	
 	public Alumno(){
 		this.idalumno=0;
@@ -22,7 +22,7 @@ public class Alumno {
 		this.fecha="";
 		this.sexo="";
 		this.cn= new Conexion();
-	}
+	}*/
 
 
 	public Alumno(String nombre, String apaterno, String amaterno , String fecha,
